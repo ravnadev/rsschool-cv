@@ -1,4 +1,4 @@
-# Anvar Atamuratov ##
+# Anvar Atamuratov #
 ## Junior Frontend Developer ##
 ## Contacts ##
 - Email: *[anvaratamuratov17@gmail.com](anvaratamuratov17@gmail.com)*<br>
@@ -11,13 +11,11 @@ Learning to build simple, responsive websites. I enjoy creating clean designs an
 ## Education ##
 - **Bachelor's Degree in Information Systems and Technologies** - Ural Federal University, 2019-2023
 ## Skills ##
-| Hard Skills               | Soft Skills              |
-|---------------------------|--------------------------|
-| HTML                      | Communication            |
-| CSS                       | Teamwork                 |
-| JavaScript                | Leadership               |
-| Git & GitHub              | Problem Solving          |
-| SQL                       | Responsibility           |
+- HTML
+- CSS/SCSS
+- JavaScript
+- Git
+- SQL
 ## Code Example ##
 ```javascript
 function simpleMultiplication(number) {
