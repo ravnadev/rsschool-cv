@@ -16,7 +16,8 @@ a{
 p{
        margin-block-start: 0;
        margin-block-end: 0;
-
+       line-height: 150%;
+       letter-spacing: 0.02em;
 }
 a:hover{
     background-color:chocolate;
@@ -26,7 +27,7 @@ a:hover{
 body{
     color: #F8F0E4;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     background-color: black;
 }
 .wrapper{
@@ -34,10 +35,12 @@ body{
     margin: 0 auto;
     padding: 0px 20px;
     background-color: #1D262D;
+    min-height: 100vh;
+    
 }
 .header{
     background-color: #e0a80d;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: black;
 }
 .header__navigation{
@@ -55,10 +58,6 @@ body{
     display: flex;
     gap: 40px;
 }
-p{
-    line-height: 24px;
-    letter-spacing: 0.08em;
-}
 .page-subtitle{
     margin-bottom: 12px;
 }
@@ -73,6 +72,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* background-color: #0; */
 }
 .avatar{
     border-radius: 120px;
@@ -97,8 +97,15 @@ p{
     font-style: italic;
     color: #e0a80d;
 }
-.about-me, .skills, .code-example, .courses, .languages{
-    margin-bottom: 20px;
+.about-me, .skills, .code-example, .courses{
+    margin-bottom: 30px;
+}
+.skills__list{
+    padding-left: 20px;
+    line-height: 150%;
+}
+.languages{
+    margin-bottom: 80px;
 }
 .code{
     padding: 10px;
@@ -107,6 +114,7 @@ p{
 }
 .courses-list{
     list-style: none;
+    line-height: 150%;
 }
 .footer{
     display: flex;
@@ -116,9 +124,11 @@ p{
     color: black;
     align-items: center;
 }
-.footer a, p{
+.footer a,
+.footer p {
     padding: 18px;
 }
+
 .rs-logo{
     width: 80px;
     height: 34px;
