@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvar Atamuratov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="header__navigation">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="side-wrapper">
+                <div class="left-side">
+                    <div class="img-container">
+                    <img src="assets/avatar.jpeg" alt="avatar" class="avatar">
+                </div>
+            <section id="contacts" class="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li>
+                        Email:
+                        <a href="mailto:anvaratamuratov17@gmail.com">anvaratamuratov17@gmail.com</a>
+                    </li>
+                    <li>GitHub
+                        <a href="https://github.com/ravnadev">ravnadev</a>
+                    </li>
+                    <li>Location:
+                        Tashkent, Uzbekistan
+                    </li>
+                </ul>
+            </section>
+            <section class="education">
+                <h2 class="section-title">Education</h2>
+                <p>Bachelor’s Degree in Information Systems and Technologies <br> Ural Federal University, 2019-2023</p>
+            </section>
+                </div>
+                <div class="right-side">
+                    <section class="page-title">
+                        <h1 class="title">Anvar <br> Atamuratov</h1>
+                        <p class="page-subtitle">Front-End Developer</p>
+                    </section>
+                <section id="about" class="about-me">
+                    <h2 class="section-title">About me</h2>
+                    <p>Beginner Frontend Developer with basic knowledge of HTML, CSS, and JavaScript. <br> Learning to build simple, responsive websites.<br>
+                         I enjoy creating clean designs and want to grow as a web developer.
+                        <br> 
+                       I'm currently improving my skills through personal projects and online courses.</p>
+                </section>
+                <section id="skills" class="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills__list">
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+                <section id="code" class="code-example">
+                    <h2 class="section-title">
+                        Code Example
+                    </h2>
+                    <pre class="code">
+                        <code>
+    function generateHashtag (str) {
+        if(str.replace(/ /gi, '').length == 0 || str.length == 0){
+            return false;
+        }
+        let res = '#' + 
+        str.split(' ').filter((c)=>c.length>0).map((c)=>c[0].toUpperCase()
+        + c.slice(1,c.length)).join('');
+        if(res.length>140  || res.length == 0){
+            return false;
+        } 
+        else{
+            return res;
+        }
+    }
+                    </code>
+                </pre>
+                </section>
+                <section class="courses">
+                    <h2 class="section-title">Courses</h2>
+                    <ul class="courses-list">
+                        <li>School 21</li>
+                        <li>RS School JS/FE</li>
+                    </ul>
+                </section>
+                <section class="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <a href="https://ravnadev.github.io/rsschool-cv/cv">CV</a>
+                </section>
+                <section class="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <p>English - B1</p>
+                </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href = "https://github.com/ravnadev">GitHub</a>
+            <p>2025</p>
+            <a href = "https://rs.school/courses/javascript-ru"><img src="assets/rs-school-logo.svg" alt="rs-school-logo" class="rs-logo"></a>
+        </footer>
+    </div>
+</body>
+</html>
