@@ -54,7 +54,7 @@
                     </section>
                 <section id="about" class="about-me">
                     <h2 class="section-title">About me</h2>
-                    <p>Beginner Frontend Developer with basic knowledge of HTML, CSS, and JavaScript. Learning to build simple, responsive websites.<br>
+                    <p>Beginner Frontend Developer with basic knowledge of HTML, CSS, and JavaScript. <br> Learning to build simple, responsive websites.<br>
                          I enjoy creating clean designs and want to grow as a web developer.
                         <br> 
                        I'm currently improving my skills through personal projects and online courses.</p>
@@ -79,7 +79,8 @@
         if(str.replace(/ /gi, '').length == 0 || str.length == 0){
             return false;
         }
-        let res = '#' + str.split(' ').filter((c)=>c.length>0).map((c)=>c[0].toUpperCase()
+        let res = '#' + 
+        str.split(' ').filter((c)=>c.length>0).map((c)=>c[0].toUpperCase()
         + c.slice(1,c.length)).join('');
         if(res.length>140  || res.length == 0){
             return false;
@@ -97,6 +98,10 @@
                         <li>School 21</li>
                         <li>RS School JS/FE</li>
                     </ul>
+                </section>
+                <section class="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <a href="https://ravnadev.github.io/rsschool-cv/cv">CV</a>
                 </section>
                 <section class="languages">
                     <h2 class="section-title">Languages</h2>

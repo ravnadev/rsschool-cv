@@ -36,7 +36,6 @@ body{
     padding: 0px 20px;
     background-color: #1D262D;
     min-height: 100vh;
-    
 }
 .header{
     background-color: #e0a80d;
@@ -97,7 +96,7 @@ body{
     font-style: italic;
     color: #e0a80d;
 }
-.about-me, .skills, .code-example, .courses{
+.about-me, .skills, .code-example, .courses, .projects{
     margin-bottom: 30px;
 }
 .skills__list{
@@ -126,10 +125,23 @@ body{
 }
 .footer a,
 .footer p {
+    height: 80px;
     padding: 18px;
 }
 
 .rs-logo{
     width: 80px;
     height: 34px;
+}
+.code {
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #f4f4f4;
+  border-radius: 4px;
+  font-family: monospace;
 }
